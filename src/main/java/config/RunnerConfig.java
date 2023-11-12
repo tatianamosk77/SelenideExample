@@ -30,9 +30,6 @@ public class RunnerConfig {
         if (useSelenoid) {
             Configuration.remote = "http://localhost:4444/wd/hub";
             CustomLogger.logger.info("Selenoid is used");
-
-//            Configuration.browserCapabilities.setCapability("enableVNC", false);
-//            Configuration.browserCapabilities.setCapability("enableVideo", false);
         }
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
         CustomLogger.logger.info("OK");

@@ -1,10 +1,6 @@
 package pages.locators;
 
 import com.codeborne.selenide.SelenideElement;
-
-import java.awt.*;
-
-import static com.codeborne.selenide.Selectors.by;
 import static com.codeborne.selenide.Selectors.byXpath;
 import static com.codeborne.selenide.Selenide.$;
 

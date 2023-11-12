@@ -1,13 +1,9 @@
 package pages.actions;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.HoverOptions;
 import io.qameta.allure.Step;
 import logger.CustomLogger;
 import org.testng.Assert;
 import pages.locators.LoginPageLocators;
-import static com.codeborne.selenide.Condition.text;
-import static helper.CommonSteps.getAndAttachScreenshot;
 
 public class LoginPageActions extends LoginPageLocators {
 

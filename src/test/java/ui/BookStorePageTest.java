@@ -1,16 +1,13 @@
 package ui;
 
-import listener.CustomListener;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.Iterator;
 
 import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.sleep;
 import static helper.CommonSteps.checkUrl;
 import static helper.CsvHelper.parseCsv;
 

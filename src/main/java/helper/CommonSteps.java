@@ -58,34 +58,6 @@ public class CommonSteps {
         return countryCode;
     }
 
-   /* @Step
-    public static void checkGeoLocationInBrowser(String country) {
-        String countryCode = "";
-        for (int i = 0; i < 20; i++) {
-            try {
-                countryCode = getCountryCodeByIp();
-                if (countryCode != null) {
-                    break;
-                }
-            } catch (WebDriverException e) {
-                Selenide.closeWebDriver();
-                sleep(5000);
-                countryCode = getCountryCodeByIp();
-            }
-        }
-        getAndAttachScreenshot();
-        if (countryCode != null && countryCode.equals(country)) {
-            CustomLogger.logger.info("Test geolocation by ip passed: " + countryCode + " equals " + country);
-        } else {
-            if (country != null && !country.isEmpty()) {
-                Assert.fail("Test geolocation by ip failed: " + countryCode + " not equals " + country + "\n" +
-                        bodyOfPageWithIP.getText());
-            } else {
-                CustomLogger.logger.info(bodyOfPageWithIP.getText());
-            }
-        }
-    }*/
-
     @Step
     public static void checkUrl(String mustContains, int timeOutSec) {
         boolean testPassed = false;
