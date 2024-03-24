@@ -13,7 +13,7 @@ The project was implemented with:
 - PageObject design pattern;
 - Tests retryer;
 - Common runner;
-- Runner via Selenide;
+- Runner via Selenoid;
 - Custom logger;
 - Custom listener for logs;
 - Running tests via TestNG.xml;
